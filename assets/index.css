@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rubik;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(/fonts/Rubik-VariableFont_wght.ttf);
+}
+
+body {
+  background: rgb(43, 244, 231);
+  background: linear-gradient(
+    157deg,
+    rgba(43, 244, 231, 1) 0%,
+    rgba(126, 227, 254, 1) 46%,
+    rgba(164, 241, 255, 1) 88%
+  );
+  background-image: url(./background.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+/* HEADER ------------------------------------ */
+
+header {
+  width: 100%;
+  padding: 18px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: whitesmoke;
+}
+
+header h1 {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+form input {
+  font-size: 20px;
+  padding: 6px 10px;
+  border-radius: 200px;
+  border: 2px solid whitesmoke;
+  background-color: transparent;
+  color: whitesmoke;
+}
+
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: whitesmoke;
+}
+
+/* MAIN ------------------------ */
+
+main {
+  margin: 10vh auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 3rem;
+  background-color: rgba(122, 122, 122, 0.26);
+  padding: 5vh 20px;
+  border-radius: 40px;
+  backdrop-filter: blur(6px);
+}
+
+main h3 {
+  font-weight: 500;
+}
+#info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3vh;
+}
+#info h4 {
+  margin: 0px 40px;
+  color: whitesmoke;
+  font-weight: 300;
+}
