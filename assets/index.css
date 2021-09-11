@@ -60,7 +60,15 @@ input::placeholder {
 /* MAIN ------------------------ */
 
 main {
-  margin: 10vh auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  margin: 5vh auto;
+}
+
+#main {
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -73,7 +81,7 @@ main {
   backdrop-filter: blur(6px);
 }
 
-main h3 {
+#main h3 {
   font-weight: 500;
 }
 #info {
@@ -86,4 +94,43 @@ main h3 {
   margin: 0px 40px;
   color: whitesmoke;
   font-weight: 300;
+}
+
+/* FORECAST */
+.forecast {
+  background-color: rgba(122, 122, 122, 0.26);
+  backdrop-filter: blur(6px);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.forecast h3 {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.image-forecast {
+  background-size: cover;
+  background-position: center;
+  height: 100px;
+  width: 100px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.info h5 {
+  margin: 0px 8px;
+  font-weight: 300;
+  font-size: 22px;
 }
