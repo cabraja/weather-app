@@ -1,4 +1,9 @@
 const API_KEY = 'af0ed49a90603484514cebbd741c972e';
+
+// import cities from 'cities.json';
+// console.log(cities);
+
+
 // DEFAULT CITY IS BELGRADE,SERBIA
 let city = 'Belgrade'; 
 const API_CALL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
@@ -34,7 +39,6 @@ const call = (url1,url2) => {
 
 
         fetch(url2).then(res => res.json()).then(data => {
-            console.log(data);
             for(let i = 8; i <25; i+=8){
                 let day;
                 if(i == 8) day = 'Tomorrow';
